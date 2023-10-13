@@ -4,12 +4,61 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-  
+
+ #openBtn {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 30px;
+  color: #000000;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #c7c3c3;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 body {
   margin: 0;
   font-family: georgian, serif;
-  background-image: url('https://imgur.com/bnVY6aV.jpg');
-  background-size: 100% 23%;
+  background-image: url('https://imgur.com/XDxInCK.jpg');
+  background-size: 100% 18%;
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -156,6 +205,10 @@ body {
   background-color: #FFE4C4;
 }
 
+#vid{
+position: center;
+}
+
   </style>
 </head>
 <body>
@@ -166,6 +219,14 @@ body {
 	<h1 style="color: #FFFFFF; font-size: 75px;">TABLE SETTING</h1>
 </div>
 
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="https://ryuthegreat.github.io/AmericanSetup/Website.html">Home <br> Page</a>
+    <a href="https://ryuthegreat.github.io/AmericanSetup/American%20test.html">American <br> Setting</a>
+    <a href="https://ryuthegreat.github.io/AmericanSetup/Russian.html">Russian <br> Setting</a>
+    <a href="https://ryuthegreat.github.io/AmericanSetup/AUTHORS.html">AUTHORS</a>
+
+  </div>
 
 <div class="text">
 <h3>
@@ -211,6 +272,24 @@ Keep in mind that the formality of French table settings can vary, and some vari
 </h3>
 </div>
 
+<p style= "font-family: 'Garamond', serif; border-width: 3px; background-color:#B86500; border-style: dashed; border-color: #FFFFFF; padding: 26px; border-radius: 20px; font-size: 40px; margin: 50;">
+<font color="#FFFFFF"> REFERENCES: </font> </p>
+
+<div class="bgcolor">
+	<h3 style="color: #FFFFFF; font-size: 22px; text-align: center; ">
+<div id=vid><iframe width="560" height="315" src="https://www.youtube.com/embed/AdIlOS1huDA?si=ONTIbrc86_-La_Tn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  <span id="openBtn" onclick="openNav()">☰</span>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
 
 </body>
 </html>
