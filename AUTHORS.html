@@ -6,6 +6,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Garamond&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400&display=swap');
 
+  #openBtn {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 30px;
+  color: #000000;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #c7c3c3;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -123,6 +172,14 @@ body {
 <font color="#FFFFFF"> AUTHORS </font> </p>
 <h3>
 
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="https://ryuthegreat.github.io/AmericanSetup/Website.html">Home <br> Page</a>
+    <a href="https://ryuthegreat.github.io/AmericanSetup/French_Test.html">French <br> Setting</a>
+    <a href="https://ryuthegreat.github.io/AmericanSetup/Russian.html">Russian <br> Setting</a>>
+
+  </div>
+
 <br>
   <div class="container">
     <div class="textt">
@@ -199,6 +256,18 @@ Sergio's Biography
 </div>
   </div>
 </div>
+
+  <span id="openBtn" onclick="openNav()">☰</span>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
 
 </body>
 </html>
