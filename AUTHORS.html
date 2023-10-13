@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400&display=swap');
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  margin: 20px;
+}
+
+.textt {
+  font-size: 32px;
+  text-align: center;
+  font-family: Garamond;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+}
+
+.column img {
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+  width: 50%;
+  margin: 0 auto; 
+  overflow: hidden;
+  border-radius: 20%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 25px;
+  text-align: center;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+body {
+  background-color: #FFE4C4;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 20px; 
+  text-align: center;
+  width: 100%;
+  top: 0;
+}
+
+.text {
+  margin: 50px auto;
+  max-width: 84%;
+  text-align: center;
+  color: #000000;
+}
+
+</style>
+</head>
+<body>
+
+<div class="text">
+<h3>
+<p style= "font-family: 'Baskerville', serif; border-width: 3px; background-color:#B86500; border-style: dashed; border-color: #FFFFFF; padding: 26px; border-radius: 20px; font-size: 59px; margin: 50;">
+<font color="#FFFFFF"> AUTHORS </font> </p>
+<h3>
+
+  <div class="container">
+    <div class="textt">
+      <h2>Ryu Dane Mickel P. De Guia</h2>
+    </div>
+  </div>
+
+<div class="row">
+<div class="column">
+<div class="image-container">
+<a href="https://ryuthegreat.github.io/AmericanSetup/Ryu_DeGuia.html">
+<img src="https://imgur.com/DioF5RX.jpg" alt="American Setting">
+<div class="overlay">
+Ryu's Biography
+</div>
+</a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="textt">
+<h2>Sofia Marie Cusi</h2>
+</div>
+</div>
+  
+<div class="row">
+<div class="column">
+<div class="image-container">
+<a href="/en/us/hells-kitchen/locations/atlantic-city">
+<img src="https://imgur.com/8O1AwkC.jpg" alt="Sofia's Biography">
+<div class="overlay">
+Sofia's Biography
+</div>
+</a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="textt">
+<h2>Darlene F. Joven</h2>
+</div>
+</div>
+  
+<div class="row">
+<div class="column">
+<div class="image-container">
+<a href="https://ryuthegreat.github.io/AmericanSetup/Darlene_Joven.html">
+<img src="https://imgur.com/kMbukyr.jpg" alt="Darlene's Biography">
+<div class="overlay">
+Darlene's Biography
+</div>
+</a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="textt">
+<h2>Sergio P. Manangan III</h2>
+</div>
+</div>
+  
+<div class="row">
+<div class="column">
+<div class="image-container">
+<a href="https://ryuthegreat.github.io/AmericanSetup/Sergio_Manangan.html">
+<img src="https://imgur.com/34mGPtn.jpg" alt="Sergio's Biography">
+<div class="overlay">
+Sergio's Biography
+</div>
+</a>
+</div>
+  </div>
+</div>
+
+</body>
+</html>
